@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="BuildButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>230</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Make Build</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FinishLabel">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>380</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="EndPrice">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>280</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Price:</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="specLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>601</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Specs:</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-3</y>
+      <width>691</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="GPULabel">
+         <property name="text">
+          <string>GPU's:</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RTX3070Button">
+         <property name="text">
+          <string>RTX 3070</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RTX2070Button">
+         <property name="text">
+          <string>RTX 2070</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RX5600Button">
+         <property name="text">
+          <string>RX 5600-XT</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ChosenGpu">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="CPULabel">
+         <property name="text">
+          <string>CPU's:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="I78700kButton">
+         <property name="text">
+          <string>I7 8700K</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="Ryzen7Button">
+         <property name="text">
+          <string>Ryzen 7 5800X</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ChosenCpu">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="RAMLabel">
+         <property name="text">
+          <string>RAM:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="ramButton1">
+         <property name="text">
+          <string>16GB (2x8GB)</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_3</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="ramButton2">
+         <property name="text">
+          <string>32GB (2x16GB)</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_3</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ChosenRAM">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="PowerSupplyLabel">
+         <property name="text">
+          <string>Power Supply:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="EVGA450WButton">
+         <property name="text">
+          <string>EVGA 450W</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_4</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="EVGA550WButton">
+         <property name="text">
+          <string>EVGA 550W</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_4</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="Corsair600WButton">
+         <property name="text">
+          <string>Corsair 600W</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_4</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="GAMEMAX800WButton">
+         <property name="text">
+          <string>GAMEMAX 800W</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_4</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ChosenPS">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="CompCase">
+         <property name="text">
+          <string>Computer Cases:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="LowRangeCaseButton">
+         <property name="text">
+          <string>Low-Range</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_5</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="MidRangeCaseButton">
+         <property name="text">
+          <string>Mid-Range </string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_5</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="HighRangeCaseButton">
+         <property name="text">
+          <string>High-Range</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_5</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ChosenCase">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>657</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>BuildButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>totalClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>256</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>356</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RTX3070Button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gpuUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>57</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RX5600Button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gpuUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>26</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>I78700kButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>cpuUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EVGA450WButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>psUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>413</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>392</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Corsair600WButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>psUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>420</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GAMEMAX800WButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>psUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>433</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>343</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LowRangeCaseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>compCaseUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>533</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HighRangeCaseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>compCaseUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>558</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>459</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ramButton1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ramUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>240</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RTX2070Button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gpuUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Ryzen7Button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>cpuUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>51</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ramButton2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ramUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>323</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>201</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MidRangeCaseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>compCaseUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>547</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>475</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EVGA550WButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>psUpdate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>401</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>totalClicked()</slot>
+  <slot>showGPUs()</slot>
+  <slot>showCPUs()</slot>
+  <slot>showRAM()</slot>
+  <slot>showPS()</slot>
+  <slot>showCompCases()</slot>
+  <slot>slot1()</slot>
+  <slot>GPUUpdate()</slot>
+  <slot>slot3()</slot>
+  <slot>gpuUpdate()</slot>
+  <slot>slot4()</slot>
+  <slot>cpuUpdate()</slot>
+  <slot>slot2()</slot>
+  <slot>ramUpdate()</slot>
+  <slot>psUpdate()</slot>
+  <slot>compCaseUpdate()</slot>
+  <slot>slot6()</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="buttonGroup_4"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_3"/>
+ </buttongroups>
+</ui>
